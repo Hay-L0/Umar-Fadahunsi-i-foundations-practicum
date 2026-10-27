@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1 Create a new Custom Object Record
+    a(href="/") Return to the homepage
+    br
+    br
+    .form-wrapper
+      form(method="POST", action="/update-cobj")
+        label(for="name") Name:
+        input(type="text", name="name", id="name", required)
+        label(for="species") Species:
+        input(type="text", name="species", id="species", required)
+        label(for="age") Age:
+        input(type="text", name="age", id="age")
+        input(type="submit", value="Create Record")
